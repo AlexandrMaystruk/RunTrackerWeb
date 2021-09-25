@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title class="h1">Runner results</title>
+    <script src="/__/firebase/7.21.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.21.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" type="text/css" href="css_package/style.css">
+
+    </head>
+    <body>
+        <div class="content">
+            <form id="runners-form"></form>
+            <ul id="runner-list"></ul>
+        </div>
+<script>
+
+
+console.log("Start init Firebase")
+//Init Firebase 
+const firebaseConfig = {
+  apiKey: "AIzaSyCsDCn_lriQ2Yp8Rr2lPNgvX3IUfCrZgis",
+  authDomain: "nfcruntracker-f044b.firebaseapp.com",
+  databaseURL: "https://nfcruntracker-f044b.firebaseio.com",
+  projectId: "nfcruntracker-f044b",
+  storageBucket: "nfcruntracker-f044b.appspot.com",
+  messagingSenderId: "3324848074",
+  appId: "1:3324848074:web:f2fca5a70eb08665f35133"
+};
+
+console.log("InitializeApp")
+firebase.initializeApp(firebaseConfig)
+
+console.log("Create firestore const")
+const db = firebase.firestore()
+console.log("db firestore")
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
